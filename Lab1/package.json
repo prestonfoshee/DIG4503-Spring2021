@@ -1,0 +1,19 @@
+{
+  "name": "lab1",
+  "version": "1.0.0",
+  "description": "DIG4503 Lab 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "DIG4503-Spring2021"
+  },
+  "author": "Preston Foshee",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
+}
