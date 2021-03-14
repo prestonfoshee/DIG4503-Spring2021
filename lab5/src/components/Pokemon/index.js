@@ -8,6 +8,6 @@ const Pokemon = (props) => {
             <img src={props.pokeImg} />
         </div>
     )
-}
+};
 
 export default Pokemon;
