@@ -41,7 +41,7 @@ export default class Database {
                     return result;
                 }
             })
-            .catch(error => {
+            .catch((error) => {
                 console.log("Error: " + error);
             })
     }

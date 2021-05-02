@@ -35,8 +35,10 @@ const GetName = () => {
     return (
         <div>
             <p>Search for names containing specific charcter(s):</p>
-            <input style={{ display: "block", margin: "auto", marginBottom: "8px" }} type="text" onChange={(e) => setSearchNameFilter(e.target.value)} />
-            <button style={{ display: "block", margin: "auto", marginBottom: "30px" }} onClick={() => filterNames(searchNameFilter)}>Search names</button>
+            <input style={{ display: "block", margin: "auto", marginBottom: "8px" }}
+                type="text" onChange={(e) => setSearchNameFilter(e.target.value)} />
+            <button style={{ display: "block", margin: "auto", marginBottom: "30px" }}
+                onClick={() => filterNames(searchNameFilter)}>Search names</button>
             {
                 searchResultsFilter.map((value, index) => {
                     return <p key={index}>{value}</p>
@@ -44,8 +46,10 @@ const GetName = () => {
             }
 
             <p>Search for exact names:</p>
-            <input style={{ display: "block", margin: "auto", marginBottom: "8px" }} type="text" onChange={(e) => setSearchNameExact(e.target.value)} />
-            <button style={{ display: "block", margin: "auto", marginBottom: "30px" }} onClick={() => exactNames(searchNameExact)}>Search names</button>
+            <input style={{ display: "block", margin: "auto", marginBottom: "8px" }}
+                type="text" onChange={(e) => setSearchNameExact(e.target.value)} />
+            <button style={{ display: "block", margin: "auto", marginBottom: "30px" }}
+                onClick={() => exactNames(searchNameExact)}>Search names</button>
             <p>{searchResultsExact}</p>
         </div>
     )
