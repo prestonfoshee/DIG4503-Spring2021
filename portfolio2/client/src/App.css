@@ -56,6 +56,11 @@ button:focus {
   outline: none;
 }
 
+.countText{
+  font-size: 30px;
+  margin-top: 50px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

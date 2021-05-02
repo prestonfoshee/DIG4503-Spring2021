@@ -18,7 +18,7 @@ const MovieCount = () => {
     return (
         <div>
             {getCount()}
-            <p>Number of movies in your list: {count}</p>
+            <p className="countText">Number of movies in your list (refresh to update): {count}</p>
         </div>
     )
 }

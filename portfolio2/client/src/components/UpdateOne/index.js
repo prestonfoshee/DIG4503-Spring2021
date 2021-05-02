@@ -10,10 +10,10 @@ const UpdateOne = () => {
     const [movieRating, setMovieRating] = useState("");
     const [movieDescription, setMovieDescription] = useState("");
     const [resultsTitle, setResultsTitle] = useState("");
-    const [resultsYear, setResultsYear] = useState("");
-    const [resultsDirector, setResultsDirector] = useState("");
-    const [resultsRating, setResultsRating] = useState("");
-    const [resultsDescription, setResultsDescription] = useState("");
+    // const [resultsYear, setResultsYear] = useState("");
+    // const [resultsDirector, setResultsDirector] = useState("");
+    // const [resultsRating, setResultsRating] = useState("");
+    // const [resultsDescription, setResultsDescription] = useState("");
 
     const updateMovie = (titleQuery, titleUpdate, year, director, rating, description) => {
         Axios.patch("http://localhost:45030/movies/" + titleQuery, {
@@ -24,8 +24,8 @@ const UpdateOne = () => {
             description: movieDescription
         })
             .then(response => {
-                console.log(response.data.title);
-                // setResultsTitle(response.data.title);
+                setResultsTitle(response.data.title);
+                console.log(resultsTitle);
             })
             .catch(error => {
                 console.log("Error: " + error);
@@ -52,11 +52,7 @@ const UpdateOne = () => {
                 onClick={() => updateMovie(movieTitleQuery, movieTitleUpdate, movieYear, movieDirector, movieRating, movieDescription)}>
                 Update
             </button>
-            <p>Updated movie:
-                { }
-                { }
-                { }
-            </p>
+            <p>Updated movie: {resultsTitle}</p>
         </div>
     )
 }
